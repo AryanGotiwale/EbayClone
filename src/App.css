@@ -1,0 +1,180 @@
+
+ body{
+  /* background-color: rgb(227, 218, 236);
+   */
+   /* background-color: white; */
+   background-color: #eff6eb;
+
+  margin: 0;
+  font-family: "Headland One", serif;
+  font-weight: 400;
+  font-style: normal;
+ }
+
+.head{
+  color:  rebeccapurple;
+ display: flex; 
+ width: 100%;
+ /* padding: 20px;  */
+ /* margin-top: 10px; */
+background-color:  #e4dfde
+}
+.head h1 {
+  /* font-size:2rem ; */
+  margin-left: 5px;
+}
+.head input{
+  width: 70%;
+  size: 30px;
+  font-size: 20px;
+  margin: 20px;
+  margin-right: 50px;
+  border-radius: 20px;
+ border-color: rebeccapurple ;
+ padding-inline: 20px;
+ border-width: 1px;
+}
+.navbar{
+  /* display: flex;
+  justify-content: center;
+  transition:background-color 0.3s ease;
+  margin: 0; */
+  text-align: center;
+  width: 100%;
+  
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  width: 1240px;
+margin: 0;
+  list-style-type: none;
+  overflow: hidden;
+  background-color:  rebeccapurple;
+}
+
+.navbar li {
+  float: left;
+  justify-content: center;
+  text-align: center;
+}
+
+.navbar li a {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+.navbar li a:hover {
+  transition:ease-in;
+  background-color: rgb(197, 162, 232);
+}
+.search-btn{
+  margin-top: 20px;
+  margin-left: -70px;
+  padding: 10px;
+  height: 42.5px;
+}
+h2{
+ 
+}
+
+.sell-btn{
+  margin-top:20px ;
+  margin-left: 30px;
+ height: 40px;
+
+ font-family: "Headland One", serif;
+  font-weight: 400;
+  font-style: normal;
+
+ border-radius: 20px;
+width: 80px;
+
+background: linear-gradient(140.14deg, #249704 15.05%, #56b503 114.99%)
+      padding-box,
+    linear-gradient(142.51deg, #40bb07 8.65%, #049c1d 88.82%) border-box;
+  border-radius: 7px;
+  border: 2px solid transparent;
+
+  text-shadow: 1px 1px 1px #00000040;
+  box-shadow: 8px 8px 20px 0px #45090059;
+
+  /* padding: 10px 40px; */
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 500;
+}
+.login-btn{
+  margin-top:20px ;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 20px;
+  width: 90px;
+  box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family: "Headland One", serif;
+  font-weight: 400;
+  font-style: normal;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+  box-shadow: 8px 8px 20px 0px #45090059;
+
+}
+.login-btn:hover{
+  background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.login-btn:active {
+  translate: 0 0.225em;
+  box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
+    0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
+    0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
+}
+.sell-btn:active{
+  translate: 0 0.225em;
+  box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
+    0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
+    0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
+}
+.sell-btn:hover{
+  box-shadow: none;
+  opacity: 80%;
+}
+.login-btn :hover{
+
+}
+.images{
+ display: flex;
+ justify-content: center;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.container-images{
+  display: flex;
+
+  justify-content: center;
+  width: 100%;
+}
+.Cards{
+  background-color: #249704;
+}
