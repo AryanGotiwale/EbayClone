@@ -6,8 +6,10 @@ import img2 from "../assets/images/image2.jpg";
 import img3 from "../assets/images/image3.jpg";
 import img4 from "../assets/images/image4.jpg";
 import img5 from "../assets/images/image5.jpg";
-import ProductCard from "../Components/ProductCard";
 import ProductList from "../Components/ProductList";
+
+import MaterialCard from "../Components/MaterialCard";
+import Product from "../Components/Product";
 
 const slideImages = [img1, img2, img3, img4, img5];
 
@@ -23,8 +25,14 @@ const Home = () => {
               </div>
             ))}
           </Fade>
-          <ProductList/>
-        </div>
+          <ProductList /><br />
+          <hr style={{margin:"0"}}/>
+          
+            <div style={{backgroundColor:'white', padding:'20px'}}>
+              <h1 style={{display:'flex', justifyContent:'center', border:'solid', backgroundColor:'rebeccapurple', color:'white', }}>Electronic Products</h1>
+            <Product/>
+            </div>
+          </div>
         
       );
 

@@ -8,7 +8,9 @@ const Header = () => {
      <div>
           
         <div className='head'>
+          <NavLink to="/">
           <h1>Bexi </h1>
+          </NavLink>
           <input type="text" placeholder='Search' />
           <button className='search-btn'><CiSearch /></button>
           {/* <input

@@ -4,7 +4,7 @@
    */
    /* background-color: white; */
    background-color: #eff6eb;
-
+   width: 100%;
   margin: 0;
   font-family: "Headland One", serif;
   font-weight: 400;
@@ -42,11 +42,12 @@ background-color:  #e4dfde
   text-align: center;
   width: 100%;
   
+  
 }
 .navbar ul {
   display: flex;
   justify-content: center;
-  width: 1240px;
+  width: 100%;
 margin: 0;
   list-style-type: none;
   overflow: hidden;
@@ -175,6 +176,53 @@ background: linear-gradient(140.14deg, #249704 15.05%, #56b503 114.99%)
   justify-content: center;
   width: 100%;
 }
-.Cards{
-  background-color: #249704;
+
+.Card-Class{
+  width: 200px;
+  height: 124px;
+  border-width: 1px;
 }
+.Card-Button{
+  
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:4px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.Card-Button:hover{
+  background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.Card-Button:active{
+  position:relative;
+	top:1px;
+}
+.rating-class{
+  line-height: normal;
+  display: inline-block;
+  color: #fff;
+  padding: 2px 4px 2px 6px;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 12px;
+  vertical-align: middle;
+  background-color: rebeccapurple;
+  position: relative;
+    bottom: 230px;
+    left: -15px;
+
+  
+  
+}
+
+
