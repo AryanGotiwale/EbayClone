@@ -29,7 +29,7 @@ const Home = () => {
           <hr style={{margin:"0"}}/>
           
             <div style={{backgroundColor:'white', padding:'20px'}}>
-              <h1 style={{display:'flex', justifyContent:'center', border:'solid', backgroundColor:'rebeccapurple', color:'white', }}>Electronic Products</h1>
+              <h1 style={{display:'flex', justifyContent:'center',textDecoration:'underline',width:'100%', margin:'0' }}>Electronic Products</h1>
             <Product/>
             </div>
           </div>

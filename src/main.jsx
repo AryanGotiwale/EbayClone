@@ -7,6 +7,12 @@ import Laptop from './Laptop.jsx'
 import Layout from './Layout.jsx'
 import Home from './Home/Home.jsx'
 import Electronics from './Pages/Electronics.jsx'
+import Admin from './Admin/Admin.jsx'
+import AddProducts from './Admin/AddProducts.jsx'
+import AdminAuth from './Admin/AdminAuth.jsx'
+import AdminHeader from './Admin/AdminHeader.jsx'
+import ProductList from './Components/ProductList.jsx'
+import ProductListAdmin from './Admin/ProductListAdmin.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -14,6 +20,10 @@ const router = createBrowserRouter(
       <Route path='/' element={<Layout/>}>
         <Route path='' element={<Home/>}/>
         <Route path='Electronics' element={<Electronics/>}/>
+        <Route path='AdminAuth' element={<AdminAuth/>}/>
+        <Route path='AdminHeader' element={<AdminHeader/>}/>
+        <Route path='AddProducts' element={<AddProducts/>}/>
+        <Route path='ProductListAdmin' element={<ProductListAdmin/>}/>
     <Route path='Laptop' element={<Laptop/>}/>
     </Route>
   )

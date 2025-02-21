@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    max-width: 100%;
+}
+.admin-container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+.edit-btn {
+  background-color: blue;
+  margin-right: 5px;
+}
+
+.edit-btn:hover {
+  background-color: darkblue;
+}
+
+.delete-btn {
+  background-color: red;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.in-user{
+    margin: 10px;
+  padding: 8px;
+  width: 90%;
+}
+.in-pass{
+    margin: 10px;
+  padding: 8px;
+  width: 90%;
+}
+.logout-btn{
+    margin-right: 200px;
+    position: relative;
+    left: 1120px;
+}

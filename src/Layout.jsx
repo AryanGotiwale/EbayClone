@@ -1,15 +1,25 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from './Header/Header'
+import { useLocation } from 'react-router-dom';
+
 
 
 const Layout = () => {
-  return (
-    <>
-    <Header/>
-    <Outlet/>
-    </>
-  )
-}
+  const location = useLocation();
 
-export default Layout
+  // Condition to hide the header and footer on the login page
+  const hideHeaderAndFooter = location.pathname === '/adminauth' || 
+  location.pathname=='/addProducts' || location.pathname ==='/adminHeader' || location.pathname ==='/productListAdmin';
+
+  return (
+    
+    <>
+      {!hideHeaderAndFooter && <Header />}
+      <Outlet />
+    
+    </>
+  );
+};
+
+export default Layout;
