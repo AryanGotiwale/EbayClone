@@ -26,7 +26,7 @@ const ProductList = () => {
          
 
        
-      ))}
+      ))}  
       <Link style={{ marginTop:'100px', marginRight:"-70px"}}><p>More</p></Link>
       
     </div>

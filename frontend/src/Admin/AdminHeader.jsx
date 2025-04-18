@@ -10,7 +10,12 @@ const AdminHeader = () => {
     </div>  
       <div className="navbar">
         <ul>
-      <li><NavLink to="/addProducts">Add Products</NavLink></li>
+      <li><NavLink    
+      style={({ isActive }) => ({
+        backgroundColor: isActive ? "#669933" : "#663399",
+      })}
+    
+        to="/addProducts">Add Products</NavLink></li>
       <li><NavLink to="/productListAdmin">Product list</NavLink></li>
       <li><NavLink to="/changePassword">Change Password</NavLink></li>
       <li><NavLink to="#">Product list</NavLink></li>

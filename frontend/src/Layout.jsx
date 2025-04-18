@@ -16,6 +16,7 @@ const Layout = () => {
   return (
     
     <>
+     
       {!hideHeaderAndFooter && <Header />}
       <Outlet />
     

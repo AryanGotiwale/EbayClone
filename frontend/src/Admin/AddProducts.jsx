@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import AdminHeader from "./AdminHeader";
 
 const AddProducts = () => {
@@ -8,53 +8,16 @@ const AddProducts = () => {
   const [rating, setRating] = useState("");
   const [description, setDescription] = useState("");
   const [image, setImage] = useState(null);
+  
+  // Create a reference for the file input
+  const fileInputRef = useRef(null);
 
-  // const handleAdd = async () => {
-  //   if (!name || !price || !mrpPrice || !rating || !description || !image) {
-  //     alert("Please fill in all fields!");
-  //     return;
-  //   }
-  
-  //   const formData = new FormData();
-  //   formData.append("name", name);
-  //   formData.append("price", price);
-  //   formData.append("mrpPrice", mrpPrice);
-  //   formData.append("rating", rating);
-  //   formData.append("description", description);
-  //   formData.append("image", image);
-  
-  //   try {
-  //     const response = await fetch("http://localhost:5000/api/products", {
-  //       method: "POST",
-  //       body: formData,
-  //     });
-  
-  //     const responseText = await response.text(); // Read the response text
-  
-  //     if (!response.ok) {
-  //       throw new Error(`Failed to add product: ${responseText}`);
-  //     }
-  
-  //     const data = JSON.parse(responseText); // Parse JSON manually
-  //     console.log("Product added successfully:", data);
-  
-  //     setName("");
-  //     setPrice("");
-  //     setMrpPrice("");
-  //     setRating("");
-  //     setDescription("");
-  //     setImage(null);
-  //   } catch (error) {
-  //     console.error("Error adding product:", error);
-  //     alert(`Error: ${error.message}`);
-  //   }
-  // };
   const handleAdd = async () => {
     if (!name || !price || !mrpPrice || !rating || !description || !image) {
       alert("Please fill in all fields!");
       return;
     }
-  
+
     const formData = new FormData();
     formData.append("name", name);
     formData.append("price", price);
@@ -62,18 +25,18 @@ const AddProducts = () => {
     formData.append("rating", rating);
     formData.append("description", description);
     formData.append("image", image);
-  
+
     try {
       const response = await fetch("http://localhost:5000/api/products", {
         method: "POST",
         body: formData,
       });
-  
+
       if (!response.ok) throw new Error("Failed to add product");
-  
+
       const data = await response.json();
       console.log("Product added successfully:", data);
-  
+
       // Clear input fields after adding
       setName("");
       setPrice("");
@@ -81,12 +44,15 @@ const AddProducts = () => {
       setRating("");
       setDescription("");
       setImage(null);
+
+      // **Reset the file input field**
+      if (fileInputRef.current) {
+        fileInputRef.current.value = "";
+      }
     } catch (error) {
       console.error("Error adding product:", error);
     }
   };
-  
-  
 
   return (
     <div>
@@ -128,6 +94,7 @@ const AddProducts = () => {
         <input
           type="file"
           accept="image/*"
+          ref={fileInputRef} // Attach ref to file input
           onChange={(e) => setImage(e.target.files[0])}
         />
         <button onClick={handleAdd}>Add Item</button>
