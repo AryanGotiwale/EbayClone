@@ -80,6 +80,7 @@ const Product = () => {
             image={product.image} 
             ActualPrice={`₹${product.mrpPrice}`} 
             rating={`${product.rating}★`} 
+            
           />
          </Link>
         ))

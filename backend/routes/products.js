@@ -52,6 +52,7 @@ router.post("/", upload.single("image"), async (req, res) => {
         mrpPrice: req.body.mrpPrice,
         description: req.body.description,
         rating: req.body.rating,
+        category:req.body.category,
         image: imageUrl, 
       });
   

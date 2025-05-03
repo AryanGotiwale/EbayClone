@@ -5,6 +5,7 @@ const productSchema = new mongoose.Schema({
   price: { type: Number, required: true },
   mrpPrice: { type: Number },
   rating: { type: Number },
+  category: {type: String, required: true},
   description: { type: String },
   image: { type: String }, // Store image as base64 or URL
 }, { timestamps: true });
